@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  python-playground:
+    build: ./playground
+    image: claclacla/python-playground
+    container_name: PythonPlayground
+    volumes:
+      - "${APP_FOLDER}:/usr/src/app"
