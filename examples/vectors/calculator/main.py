@@ -2,6 +2,7 @@ from vectors_operations.operations.add import add as vectors_add
 from vectors_operations.operations.subtract import subtract as vectors_subtract
 
 from operations.multiply import *
+from operations.magnitude import *
 
 def main():
   vector_a = [1, 2]
@@ -38,6 +39,14 @@ def main():
   vector_e = multiply(vector_a, 2)
 
   print(vector_e)
+
+  # Magnitude
+
+  print("Magnitude:")
+
+  vector_f = magnitude(vector_a)
+
+  print(vector_f)
 
 if __name__ == "__main__":
   main()
