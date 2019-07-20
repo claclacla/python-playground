@@ -5,10 +5,10 @@ def magnitude(vector):
 
   # Add squared vector numbers
 
-  magnitude = reduce(lambda total, number: total + number ** 2, vector)
+  vector_magnitude = reduce(lambda total, number: total + number ** 2, vector, 0)
 
   # Calculate the square root
 
-  magnitude = sqrt(magnitude)
+  vector_magnitude = sqrt(vector_magnitude)
 
-  return  magnitude
+  return vector_magnitude

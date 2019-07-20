@@ -3,6 +3,7 @@ from vectors_operations.operations.subtract import subtract as vectors_subtract
 
 from operations.multiply import *
 from operations.magnitude import *
+from operations.direction import *
 
 def main():
   vector_a = [1, 2]
@@ -44,9 +45,17 @@ def main():
 
   print("Magnitude:")
 
-  vector_f = magnitude(vector_a)
+  vector_magnitude = magnitude([-0.221, 7.437])
 
-  print(vector_f)
+  print(vector_magnitude)
+
+  # Direction
+
+  print("Direction:")
+
+  vector_direction = direction([1.996, 3.108, -4.554])
+
+  print(vector_direction)
 
 if __name__ == "__main__":
   main()
