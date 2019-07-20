@@ -40,7 +40,9 @@ echo "APP_FOLDER=/path-to-your-playground" > .env
 sudo docker-compose -f docker/docker-compose.yaml up -d
 
 # Execute your python scripts ...
+sudo docker exec -it PythonPlayground bash
 
+# Execute your python scripts ...
 
 ```
 
